@@ -1,0 +1,131 @@
+{
+	"info": {
+		"_postman_id": "afaad512-d43d-4692-93ac-813102db6581",
+		"name": "Drone Collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "9268948"
+	},
+	"item": [
+		{
+			"name": "Save New Drone",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"serialNumber\": \"DR-123d45da69\",\r\n    \"model\": \"LIGHTWEIGHT\",\r\n    \"weightLimit\": 400,\r\n    \"batteryCapacity\": 75,\r\n    \"state\": \"IDLE\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "127.0.0.1:8080/api/drones/register",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"drones",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Medications Per Drone",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "127.0.0.1:8080/api/medication/drone/1",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"medication",
+						"drone",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Load Medications To Drone",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "[\r\n    {\r\n    \"name\": \"Magnum\",\r\n    \"weight\": 50,\r\n    \"code\": \"PARA_123\",\r\n    \"image\": \"https://example.com/images/paracetamol.jpg\"\r\n}\r\n\r\n]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "127.0.0.1:8080/api/drones/3154/load",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"drones",
+						"3154",
+						"load"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Drones Available for Loading",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "Get Drone Battery Level",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "127.0.0.1:8080/api/drones/1/battery",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"drones",
+						"1",
+						"battery"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
