@@ -35,6 +35,8 @@ Spring Boot API for Managing Drones
  ```
   http://localhost:8080/h2-console
   ```
+ - The username and passwords are defined at application.properties
+ - Make sure the database file path is correct on the login console
   
 ## Documentation:<br>
 - The application has an embedded swagger web page showcasing all the endpoints
