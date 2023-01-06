@@ -1,10 +1,10 @@
-# spring_drone
+# Spring Drone Manager
 
 Spring Boot API for Managing Drones
 
 
 ## PreRequisites:<br>
-- JAVA Version 17 (openjdk:17)
+- JAVA Version 19 (openjdk:19)
 - Maven Version 3.8.4
 
 ## To deploy the project (Docker):<br>
@@ -25,7 +25,7 @@ Spring Boot API for Managing Drones
   ```
   mvn spring-boot:run
   ``` 
-- Wait for the image to build and run on port 8080
+- Wait for the image to build and run on port 8080 (Note, you need to have jdk 19 installed and added to the path)
 
 
 ## Database :<br>
