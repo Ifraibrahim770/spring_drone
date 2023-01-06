@@ -47,7 +47,7 @@ Spring Boot API for Managing Drones
   http://localhost:8080/api-docs
   ```
 - For the PostMan Collection Look under
-  [Collection.json](/docs/INVENTORY%20COLLECTION.postman_collection.json)
+  [Collection.json](/Documentation/Drone%20Collection.postman_collection.json)
 
 ## Tests <br>
 - To run all the unit tests Run the command:<br>
